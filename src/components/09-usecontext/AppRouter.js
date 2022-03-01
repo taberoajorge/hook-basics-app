@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Route, Link, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import NavBar from "./NavBar";
 import AboutScreen from "./AboutScreen";
 import LoginScreen from "./LoginScreen";
@@ -11,11 +11,12 @@ function AppRouter() {
     <BrowserRouter>
       <>
       <NavBar />
+      
       <Routes>
         <Route exac path="/" element={<HomeScreen />} />
         <Route exac path="/about" element={<AboutScreen />} />
         <Route exac path="/login" element={<LoginScreen />} />
-        <Route  path="*" r element={<HomeScreen />} />
+        <Route  path="*"  element={<HomeScreen />} />
       </Routes>
       </>
     </BrowserRouter>

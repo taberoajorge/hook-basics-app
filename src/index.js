@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MainSpp from './components/09-usecontext/mainSpp.js';
+import MainApp from './components/09-usecontext/MainApp.js';
 import './styles.css'
 
 ReactDOM.render(
-  <MainSpp />,
+  <MainApp />,
   document.getElementById('root')
 );
 
